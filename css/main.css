@@ -28,7 +28,7 @@ header {
   text-align: center;
 }
 
- h1 {
+header h1 {
   font-family: Ubuntu, bold;
   margin: .9rem;
   font-size: 2rem;
@@ -53,8 +53,113 @@ nav ul {
   text-align: left;
 }
 
-
 nav a:hover {
   background-color: #6c8fe0;
   color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    line-height: 1.4;
+    font-size: 110%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 50%;
+    text-align: center;
+    padding: 0 .5em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    line-height: 1.4;
+    font-size: 110%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  li {
+    text-align: center;
+    width: 25%;
+    padding: 0 .75em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    line-height: 1.4;
+    font-size: 110%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  li {
+    text-align: center;
+    width: 25%;
+    padding: 0 .75em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    line-height: 1.5;
+    font-size: 120%;
+  }
+
+  header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  nav li {
+    width: auto;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  nav li {
+    width: auto;
+  }
+
 }
